@@ -3,16 +3,22 @@ import java.time.format.DateTimeFormatter;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.printf("Witaj w testowym pliku!");
-        
-        for (int i = 0; i < 10; i++) {
-            System.out.println("i = " + i);
-        }
+        //Powitanie z nazwą użytkownika
+        String username = System.getProperty("user.name");
+        System.out.println("Witaj, " + username);
+
         //Wypisywanie aktualnej godziny
         LocalDateTime currentDateTime = LocalDateTime.now();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         String formattedDateTime = currentDateTime.format(formatter);
-        System.out.println("Aktualna godzina: " + formattedDateTime);
+        System.out.println("Aktualna data i godzina: " + formattedDateTime);
 
+        //Wyświetlenie systemu operacyjnego
+        String osName = System.getProperty("os.name");
+        System.out.println("System operacyjny: " + osName);
+
+        //Wyświetlenie wersji Javy
+        String javaVersion = System.getProperty("java.version");
+        System.out.println("Wersja Javy: " + javaVersion);
     }
 }
