@@ -10,9 +10,9 @@ public class Main {
         }
         //Wypisywanie aktualnej godziny
         LocalDateTime currentDateTime = LocalDateTime.now();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         String formattedDateTime = currentDateTime.format(formatter);
-        System.out.println("Aktualna godzina: " + formattedDateTime);
+        System.out.println("Aktualna data i godzina: " + formattedDateTime);
 
     }
 }
