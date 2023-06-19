@@ -1,3 +1,2 @@
-- Wyświetlenie aktualnego użytkownika
 - Zmiana powitania
 - Optymalizacja kodu
