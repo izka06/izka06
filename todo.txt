@@ -1,2 +1,1 @@
-- Zmiana powitania
 - Optymalizacja kodu
