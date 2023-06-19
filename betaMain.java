@@ -8,9 +8,6 @@ public class Main {
         String username = System.getProperty("user.name");
         System.out.println("Witaj, " + username);
 
-        for (int i = 0; i < 10; i++) {
-            System.out.println("i = " + i);
-        }
         //Wypisywanie aktualnej godziny
         LocalDateTime currentDateTime = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
