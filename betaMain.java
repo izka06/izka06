@@ -14,5 +14,12 @@ public class Main {
         String formattedDateTime = currentDateTime.format(formatter);
         System.out.println("Aktualna data i godzina: " + formattedDateTime);
 
+        //Wyświetlenie systemu operacyjnego
+        String osName = System.getProperty("os.name");
+        System.out.println("System operacyjny: " + osName);
+
+        //Wyświetlenie wersji Javy
+        String javaVersion = System.getProperty("java.version");
+        System.out.println("Wersja Javy: " + javaVersion);
     }
 }
