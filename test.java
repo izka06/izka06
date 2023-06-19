@@ -11,10 +11,10 @@ public class Main {
 
             System.out.print("Aktualny czas: " + formattedTime);
 
-            try {
+            /*try {
                 Thread.sleep(1000); //1 sekunda
             } catch (InterruptedException e) {
                 e.printStackTrace();
-            }
+            }*/
     }
 }
