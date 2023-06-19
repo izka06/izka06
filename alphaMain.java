@@ -3,7 +3,10 @@ import java.time.format.DateTimeFormatter;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.printf("Witaj w testowym pliku!");
+
+        //Powitanie z nazwą użytkownika
+        String username = System.getProperty("user.name");
+        System.out.println("Witaj, " + username);
 
         for (int i = 0; i < 10; i++) {
             System.out.println("i = " + i);
